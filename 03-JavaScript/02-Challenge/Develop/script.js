@@ -1,5 +1,5 @@
 // Assignment Code
-
+var generatePassword;
 var generatePassword;
 var generateBtn = document.querySelector("#generate");
 
