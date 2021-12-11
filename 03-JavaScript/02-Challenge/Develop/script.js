@@ -1,6 +1,6 @@
 // Assignment Code
-var passwordText = document.querySelector("password")
 var generateBtn = document.querySelector("#generate");
+var generatePassword;
 
 
 
