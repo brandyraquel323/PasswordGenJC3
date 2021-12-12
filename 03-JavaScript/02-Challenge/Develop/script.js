@@ -1,6 +1,8 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-var generatePassword
+generateBtn.onclick = function() {
+  window.alert("Welcome to Password Generator! Press 'OK' to begin")
+}
 
 
 
