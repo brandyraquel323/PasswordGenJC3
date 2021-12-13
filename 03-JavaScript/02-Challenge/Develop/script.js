@@ -22,6 +22,9 @@ console.log(promptLower)
 var promptNumbers = window.prompt ("Would you like to include numbers? Enter 'YES or CANCEL'");
 console.log(promptNumbers);
 
+if (charLength<8){
+  window.alert("Please enter minimum of 8. Please follow all criteria")
+})
 
 
 
