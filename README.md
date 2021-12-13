@@ -11,4 +11,4 @@ Challeges that I encountered include:
 
 Link to deployed site: please find my html, css, index file in the folder. This is where my website is. https://github.com/brandyraquel323/PasswordGenJC3/tree/main/03-JavaScript/02-Challenge/Develop
 
-Link to Github Reppository:
+Link to Github Reppository: https://github.com/brandyraquel323/PasswordGenJC3.git
