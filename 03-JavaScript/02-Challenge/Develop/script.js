@@ -24,20 +24,42 @@ console.log(promptNumbers);
 
 var promptSpecialChar = window.prompt ("Would you like to include special charaters? 'Enter YES or CANCEL'");
 
-if (charLength<8){
-  window.alert("Please enter minimum of 8. Please follow all criteria")
-
-
-
-
-
-
-
-
-
-
-
+if (charLength<8) {
+  window.alert("Please enter minimum of 8. Please follow all criteria");
+  return;
 }
+
+if (charLength>128) {
+  window.alert("Do not enter more than 128 characters");
+  return;
+}
+else {
+  window.alert("Acceptable Criteria");
+}
+
+function generatePassword(lower, upper, number, special, lenght){
+
+  let generatePassword ='';
+  const typesCount = lower + upper + number + special;
+  console.log("typesCount: ', typesCount")
+  const typesArr =[{lower}, {upper}, {number}, {special}]
+  console.log('typesarr: ', typesArr);
+}
+
+function generatePassword(passwordLength){
+  var numberChars = "0123456789";
+  var upperChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var lowerChars = "abcdefghijklmnopqrstuvwxyz";
+  var specialChars = "!@#$%^&*()";
+  var allChars = numberChars + upperChars + lowerChars + specialChars;
+  var randomPasswordArray = Array(passwordLength);
+
+randomPassArray[0] = numberChars;
+randomPassArray[1] = upperChars;
+randomPassArray[2] = lowerChars;
+randomPassArray[3] = specialChars;
+randomPassArray= randomPassArray.fill(allChars), 4;
+return shuffleArray(randomPassAray.map(function(x) { return x[Math.floor(Math.random() * x.lenght)] })).join ('');
 
 
 
@@ -52,3 +74,4 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+}
