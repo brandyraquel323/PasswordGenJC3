@@ -54,6 +54,7 @@ function generatePassword(passwordLength){
   var allChars = numberChars + upperChars + lowerChars + specialChars;
   var randomPasswordArray = Array(passwordLength);
 
+  var generatePassword;
 randomPassArray[0] = numberChars;
 randomPassArray[1] = upperChars;
 randomPassArray[2] = lowerChars;
