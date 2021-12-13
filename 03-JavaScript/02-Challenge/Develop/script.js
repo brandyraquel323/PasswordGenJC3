@@ -60,8 +60,19 @@ randomPassArray[2] = lowerChars;
 randomPassArray[3] = specialChars;
 randomPassArray= randomPassArray.fill(allChars), 4;
 return shuffleArray(randomPassAray.map(function(x) { return x[Math.floor(Math.random() * x.lenght)] })).join ('');
+}
+ 
+function shuffleArray(array){
+  for (var i= array.lenght - 1; i > 0; i--){
+    var j = Math.floor(Math.random() * (i + 1));
+    var temp =array[i];
+    array[i]= array[j];
+    array[j] = temp;
+  }
+  return array;
+}
 
-
+var generateBtn = document.querySelector("generate");
 
 // Write password to the #password input
 function writePassword() {
@@ -73,5 +84,5 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+alert(generatePassword(8));
 }
