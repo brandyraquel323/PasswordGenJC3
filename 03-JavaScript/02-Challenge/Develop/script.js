@@ -36,35 +36,28 @@ if (charLength>128) {
 else {
   window.alert("Acceptable Criteria");
 }
+alert(generatePassword(8));
 
-function generatePassword(lower, upper, number, special, lenght){
 
-  let generatePassword ='';
-  const typesCount = lower + upper + number + special;
-  console.log("typesCount: ', typesCount")
-  const typesArr =[{lower}, {upper}, {number}, {special}]
-  console.log('typesarr: ', typesArr);
-}
-
-function generatePassword(passwordLength){
+function generatePassword(passwordLength) {
   var numberChars = "0123456789";
   var upperChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var lowerChars = "abcdefghijklmnopqrstuvwxyz";
   var specialChars = "!@#$%^&*()";
   var allChars = numberChars + upperChars + lowerChars + specialChars;
+ 
   var randomPasswordArray = Array(passwordLength);
 
-  var generatePassword;
-randomPassArray[0] = numberChars;
-randomPassArray[1] = upperChars;
-randomPassArray[2] = lowerChars;
-randomPassArray[3] = specialChars;
-randomPassArray= randomPassArray.fill(allChars), 4;
-return shuffleArray(randomPassAray.map(function(x) { return x[Math.floor(Math.random() * x.lenght)] })).join ('');
+randomPasswordArray[0] = numberChars;
+randomPasswordArray[1] = upperChars;
+randomPasswordArray[2] = lowerChars;
+randomPasswordArray[3] = specialChars;
+randomPasswordArray= randomPasswordArray.fill(allChars, 4);
+return shuffleArray(randomPasswordArray.map(function(x) { return x[Math.floor(Math.random() * x.length)] })).join('');
 }
  
-function shuffleArray(array){
-  for (var i= array.lenght - 1; i > 0; i--){
+function shuffleArray(array) {
+  for (var i= array.length - 1; i > 0; i--) {
     var j = Math.floor(Math.random() * (i + 1));
     var temp =array[i];
     array[i]= array[j];
@@ -73,7 +66,7 @@ function shuffleArray(array){
   return array;
 }
 
-var generateBtn = document.querySelector("generate");
+var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
@@ -85,5 +78,4 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-alert(generatePassword(8));
 }
