@@ -19,7 +19,11 @@ console.log(promptUpper);
 var promptLower = window.prompt ("Would you like to include lower case letters? Enter 'YES or CANCEL'");
 console.log(promptLower)
 
-var prompNumbers = window.prompt ("Would you like to include numbers? Enter 'YES or CANCEL'");
+var promptNumbers = window.prompt ("Would you like to include numbers? Enter 'YES or CANCEL'");
+console.log(promptNumbers);
+
+
+
 
 
 
